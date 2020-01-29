@@ -96,7 +96,7 @@ storeSchema.statics.getTopStores = function(){
             averageRating: {$avg: '$reviews.rating'}
         }},
         // sort Desc
-        { $sort: { averageRation: -1}}, 
+        { $sort: { averageRating: -1}}, 
         // limit at 10
         { $limit:10 }
     ]);
